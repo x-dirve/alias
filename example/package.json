@@ -1,0 +1,17 @@
+{
+    "name": "@x-drive/alias-example",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "shallWe": "node ./index.js"
+    },
+    "dependencies": {},
+    "aliases": {
+        "@@": "./",
+        "@": "./@server",
+        "@components": "./@server"
+    },
+    "author": "digiaries <digiaries@hotmail.com>",
+    "license": "ISC"
+}

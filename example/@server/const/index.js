@@ -1,0 +1,2 @@
+const TEST_CONST = "TEST_CONST";
+exports.TEST_CONST = TEST_CONST;

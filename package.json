@@ -1,0 +1,45 @@
+{
+    "name": "@x-drive/alias",
+    "version": "1.0.0",
+    "description": "nodeJs 包引用别名支持",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "dev": "swc src -D ./src/bin  --config-file .swcrc -d dist -w",
+        "compile": "swc src -D ./src/bin --config-file .swcrc -d dist",
+        "build": "yarn compile && yarn gen-declaration",
+        "gen-declaration": "tsc --emitDeclarationOnly",
+        "changelog": "changelog"
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/x-dirve/alias.git"
+    },
+    "keywords": [
+        "module",
+        "alias",
+        "require"
+    ],
+    "author": "digiaries <digiaries@hotmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/x-dirve/alias/issues"
+    },
+    "homepage": "https://github.com/x-dirve/alias#readme",
+    "dependencies": {
+        "colors": "1.4.0"
+    },
+    "devDependencies": {
+        "tslib": "2.3.0",
+        "chokidar": "3.5.3",
+        "typescript": "4.3.4",
+        "@types/node": "16.11.40",
+        "@types/inquirer": "8.2.1",
+        "@swc/cli": "0.1.57",
+        "@swc/core": "1.2.171",
+        "@x-drive/changelog": "1.1.6"
+    }
+}
