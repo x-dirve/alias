@@ -151,8 +151,13 @@ function alias(options?: AliasOptions) {
             }
         }
         if (setting && setting.aliases) {
-            for (const name in setting.aliases) {
+            for (let name in setting.aliases) {
                 const item = setting.aliases[name];
+                if (name === "@") {
+                    // 现在很多机构包都是 @xxx/yyy 这样的结构，
+                    // 单独的一个 @ 会导致在后面替换的时候出现错误
+                    name = name + "/";
+                }
                 moduleAliasNames.push(name);
                 if (item.startsWith("/")) {
                     internalModuleAliases[name] = item;

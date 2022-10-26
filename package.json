@@ -1,6 +1,6 @@
 {
     "name": "@x-drive/alias",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "nodeJs 包引用别名支持",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
