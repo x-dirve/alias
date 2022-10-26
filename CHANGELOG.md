@@ -1,3 +1,8 @@
+## v1.0.1
+
+### Fix
+- fix: 修复机构包被意外替换的问题 [abc6f80](https://github.com/x-dirve/alias/commit/abc6f80eb6649999f7229ce70701085009e9ec40)
+
 ## v1.0.0
 
 ### Feat
